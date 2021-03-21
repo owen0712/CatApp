@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".earnmunny">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:layout_gravity="center"
+        android:background="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            tools:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/cdr"
+                android:layout_width="46dp"
+                android:layout_height="47dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.83"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.797"
+                app:srcCompat="@drawable/coin" />
+
+            <ImageView
+                android:id="@+id/cur"
+                android:layout_width="52dp"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.844"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.209"
+                app:srcCompat="@drawable/coin" />
+
+            <ImageView
+                android:id="@+id/cdl"
+                android:layout_width="50dp"
+                android:layout_height="47dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.193"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.797"
+                app:srcCompat="@drawable/coin" />
+
+            <TextView
+                android:id="@+id/coin"
+                android:layout_width="80dp"
+                android:layout_height="42dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.28" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/catAnim"
+            android:layout_width="51dp"
+            android:layout_height="46dp"
+            android:src="@drawable/cat" />
+
+        <ImageView
+            android:id="@+id/wall1"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/test" />
+
+        <ImageView
+            android:id="@+id/wall2"
+            android:layout_width="46dp"
+            android:layout_height="323dp"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/test00" />
+
+        <ImageView
+            android:id="@+id/wall3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@drawable/test" />
+
+        <ImageView
+            android:id="@+id/wall4"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/test00" />
+
+        <ImageView
+            android:id="@+id/wall5"
+            android:layout_width="124dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/cube" />
+
+        <ImageView
+            android:id="@+id/wall6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            app:srcCompat="@drawable/test00" />
+
+        <ImageView
+            android:id="@+id/wall7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            app:srcCompat="@drawable/test" />
+
+    </FrameLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame"
+        app:layout_constraintVertical_bias="0.169">
+
+        <Button
+            android:id="@+id/upBtn"
+            android:layout_width="91dp"
+            android:layout_height="54dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@drawable/u" />
+
+        <Button
+            android:id="@+id/downBtn"
+            android:layout_width="91dp"
+            android:layout_height="54dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@drawable/d" />
+
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_width="91dp"
+            android:layout_height="54dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@drawable/l" />
+
+        <Button
+            android:id="@+id/rightBtn"
+            android:layout_width="91dp"
+            android:layout_height="54dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="@drawable/r" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

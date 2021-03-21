@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/cat2" android:duration="50"/>
+    <item android:drawable="@drawable/cat_happy" android:duration="50"/>
+    <item android:drawable="@drawable/cat_happy2" android:duration="50"/>
+    <item android:drawable="@drawable/cat_happy3" android:duration="50"/>
+    <item android:drawable="@drawable/cat_happy4" android:duration="50"/>
+    <item android:drawable="@drawable/cat_happy5" android:duration="50"/>
+    <item android:drawable="@drawable/cat_happy6" android:duration="1000"/>
+    <item android:drawable="@drawable/cat_happy5" android:duration="10"/>
+    <item android:drawable="@drawable/cat_happy4" android:duration="10"/>
+    <item android:drawable="@drawable/cat_happy3" android:duration="10"/>
+    <item android:drawable="@drawable/cat_happy2" android:duration="10"/>
+    <item android:drawable="@drawable/cat_happy" android:duration="10"/>
+    <item android:drawable="@drawable/cat2" android:duration="50"/>
+
+</animation-list>
